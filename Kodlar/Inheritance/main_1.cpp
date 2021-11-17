@@ -37,10 +37,10 @@ public:
 
 class KargoKutusu:public Kutu{
 public:
-    void kime(string K){
+    void setKime(string K){
         Kime=K;
     }
-    string getAlici(){
+    string getKime(){
         return Kime;
     }
 
@@ -51,12 +51,12 @@ private:
 int main() {
 
 KargoKutusu kKutu_1;
-kKutu_1.kime("Ahmet");
+kKutu_1.setKime("Ahmet");
 kKutu_1.setDerinlik();
 kKutu_1.setGenislik();
 kKutu_1.setYukseklik();
 cout << "Kargo Bilgileri" << endl;
-cout << "Alici :" << kKutu_1.getAlici() << endl;
+cout << "Alici :" << kKutu_1.getKime() << endl;
 cout << "Kargo Kutusu Hacmi : " << kKutu_1.HacimHesapla() << endl;
 
 return 0;
