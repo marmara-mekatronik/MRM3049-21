@@ -25,5 +25,7 @@ int main() {
         cout << dizi_heap[i] << endl;
     }
 
+    free(dizi_heap);
+    
     return 0;
 }
